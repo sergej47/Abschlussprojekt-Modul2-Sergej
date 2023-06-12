@@ -1,4 +1,7 @@
 package classes
 
-class Miearbeiter {
+class Mitarbeiter(var mitarbeiterName: String, var mitarbeiterKonto: Double, var mitarbeiterPasswort: String) {
+
+
+
 }
