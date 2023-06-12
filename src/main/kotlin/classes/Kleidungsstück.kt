@@ -1,0 +1,4 @@
+package classes
+
+class Kleidungsstück {
+}
