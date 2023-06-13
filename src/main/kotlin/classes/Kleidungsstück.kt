@@ -1,14 +1,11 @@
 package classes
 
-class Kleidungsstück () {
+class Kleidungsstueck (
+    produktart: String,groesse: String,
+    preis: Double,farbe: String): Produkt(produktart,groesse, preis, farbe) {
 
-    var kleidungListe: MutableMap<String,Double> = mutableMapOf(
-        "Jogginghose" to 5.99,
-        "Jeanshose" to 17.99,
-        "Shorts" to 12.95
-    )
+    }
 
     fun rezensionAnzeigen(){
 
     }
-}

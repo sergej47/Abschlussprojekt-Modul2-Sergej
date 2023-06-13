@@ -1,7 +1,11 @@
 package classes
 
-class Mitarbeiter(var mitarbeiterName: String, var mitarbeiterKonto: Double, var mitarbeiterPasswort: String) {
-
-
+class Mitarbeiter (
+    name: String,
+    nachname: String,
+    konto: Double,
+    iD: Int,
+    passwort: String
+): Person(name,nachname,konto,iD,passwort) {
 
 }

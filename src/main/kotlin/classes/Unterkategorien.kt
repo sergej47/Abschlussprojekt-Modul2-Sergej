@@ -1,6 +1,6 @@
 package classes
 
-class Unterkategorien() {
+open class Unterkategorien() {
 
     var schmuck: MutableMap<String,Double> = mutableMapOf(
         "Uhr" to 19.99,
