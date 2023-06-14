@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5eb2218c-3fa6-4611-bb4e-f75baa249c84" name="Changes" comment="Abschlussprojekt Shop&#10;habe paar Klassen angelegt">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/classes/Person.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/classes/Produkt.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/untils.kt" afterDir="false" />
+    <list default="true" id="5eb2218c-3fa6-4611-bb4e-f75baa249c84" name="Changes" comment="Abschlussprojekt Shop:&#10;testweise:&#10;-&gt;habe paar Klassen angelegt&#10;-&gt;eine anmeldungs Methode angelegt&#10;-&gt;Begrüßung vom user">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/classes/Store.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes/Kleidungsstück.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes/Kleidungsstück.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes/Miearbeiter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes/Miearbeiter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes/Unterkategorien.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes/Unterkategorien.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes/kunde.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes/kunde.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes/Person.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes/Person.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes/Produkt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes/Produkt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes/kunde.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes/Kunde.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/untils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/untils.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,11 +82,19 @@
       <option name="project" value="LOCAL" />
       <updated>1686579662245</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Abschlussprojekt Shop:&#10;testweise:&#10;-&gt;habe paar Klassen angelegt&#10;-&gt;eine anmeldungs Methode angelegt&#10;-&gt;Begrüßung vom user">
+      <created>1686667051660</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686667051660</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Abschlussprojekt Shop&#10;habe paar Klassen angelegt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Abschlussprojekt Shop&#10;habe paar Klassen angelegt" />
+    <MESSAGE value="Abschlussprojekt Shop:&#10;testweise:&#10;-&gt;habe paar Klassen angelegt&#10;-&gt;eine anmeldungs Methode angelegt&#10;-&gt;Begrüßung vom user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Abschlussprojekt Shop:&#10;testweise:&#10;-&gt;habe paar Klassen angelegt&#10;-&gt;eine anmeldungs Methode angelegt&#10;-&gt;Begrüßung vom user" />
   </component>
 </project>

@@ -1,11 +1,12 @@
 package classes
 
-class Mitarbeiter (
+open class Mitarbeiter (
     name: String,
     nachname: String,
-    konto: Double,
+    kontoStand: Double,
     iD: Int,
-    passwort: String
-): Person(name,nachname,konto,iD,passwort) {
+    passwort: String,
+    logged: Boolean = true
+): Person(name,nachname,kontoStand,iD,passwort,logged) {
 
 }

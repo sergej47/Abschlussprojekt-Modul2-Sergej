@@ -5,5 +5,6 @@ open class Produkt (
     var groesse: String,
     var preis: Double,
     var farbe: String,
+    var anzahl: Int
 ) {
 }

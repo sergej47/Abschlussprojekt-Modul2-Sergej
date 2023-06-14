@@ -3,23 +3,38 @@ package classes
 open class Person(
     val name: String,
     val nachname: String,
-    var konto: Double,
-    private var iD: Int,
-    private var passwort: String,
+    var kontoStand: Double,
+    var iD: Int,
+    var passwort: String,
+    var logged: Boolean = false
 
-    var vorhandenenKunden: MutableList<String>
-
-)
-
-{
+) {
     open fun einkaufsliste(produkt: Produkt) {
         var wahrenkorb: List<Produkt> = listOf()
     }
-   init {
-        var person1 = Person("David","Schulz", 2200.58,iD,passwort)
-        var person2 = Person("Ranko","Grotte", 2050.28,iD, passwort)
-        var person3 = Person("Siggi","Schlecht", 2070.68,iD, passwort)
-        var person4 = Person("Danger","Stein", 2300.98,iD, passwort)
+
+   open fun anmeldung(): Boolean {
+
+        println("Bitte hier einmal Anmelden:")
+        println("Name?:")
+        var eingabeName = readln()
+        println("Hallo $eingabeName")
+
+
+        // Passwortabfrage.
+        var versuche = 0
+
+        while (versuche < 5 && !logged) {
+            println("geben sie ihr Passwort ein:")
+            var pw: String? = readln()
+            if (pw != null) {
+                logged = true
+            } else {
+                println("Falsches Passwort. Versuch sie es noch einmal")
+                versuche++ // versuche = versuche + 1
+            }
+        }
+        return logged
     }
 
 
