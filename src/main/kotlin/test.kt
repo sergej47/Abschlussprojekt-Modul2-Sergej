@@ -24,6 +24,7 @@ fun main() {
     println("----------------------------------------")
     println("Art: ${kleidungsstueck4.produktArt}, Größe: ${kleidungsstueck4.groesse}, Preis: ${kleidungsstueck4.preis}, Farbe: ${kleidungsstueck4.farbe}, Anzahl: ${kleidungsstueck3.anzahl}")
 
+
     var store = Store()
     store.kleidungsliste
 
