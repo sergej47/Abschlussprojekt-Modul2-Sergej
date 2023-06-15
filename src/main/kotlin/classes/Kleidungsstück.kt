@@ -9,8 +9,6 @@ class Kleidungsstueck (
     fun rezensionAnzeigen(){
 
     }
-
-    var kleidungsListe: MutableMap<String,Double> = mutableMapOf()
 }
 
 

@@ -16,7 +16,7 @@ open class Store {
         kleidungsstueck3,
         kleidungsstueck4
     )
-    fun kleidungsListe(
+   fun kleidungsListe(
         produktart: String,
         groesse: String,
         preis: Double,
@@ -25,8 +25,14 @@ open class Store {
 
     }
 
+   open fun wahreAuswahl(){
+
+        var imput: Int = readln().toInt()
+        var indexOfImput = kleidungsliste.indices
+        println("Sie haben $imput ${kleidungsliste} ausgewählt schöne wahl!")
+    }
+
 
 }
-
 
 
