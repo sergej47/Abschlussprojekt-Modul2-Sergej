@@ -9,6 +9,7 @@ open class Person(
     var logged: Boolean = false
 
 ) {
+
     open fun einkaufsliste(produkt: Produkt) {
         var wahrenkorb: List<Produkt> = listOf()
     }
@@ -36,6 +37,7 @@ open class Person(
         }
         return logged
     }
+
 
 
 }

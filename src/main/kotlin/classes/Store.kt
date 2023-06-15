@@ -23,16 +23,6 @@ open class Store {
         farbe: String
     ){
 
-    }
 
-   open fun wahreAuswahl(){
-
-        var imput: Int = readln().toInt()
-        var indexOfImput = kleidungsliste.indices
-        println("Sie haben $imput ${kleidungsliste} ausgewählt schöne wahl!")
-    }
-
-
-}
-
+   }   }
 

@@ -4,11 +4,12 @@ import classes.*
 fun main() {
 
     // Erstellte /Personen/ Kunden:
-    var person1 = Person("David", "Schulz", 2200.58,123467,"user123")
-    var mitarbeiter1 = Mitarbeiter("Ranko", "Grotte", 2050.28, 987654321, "User321")
-    var person3 = Person("Siggi", "Würdich", 2070.68,1234565,"user123")
-    var mitarbeiter = Mitarbeiter("Danger", "Stein", 2300.98, 987654321, "User321")
-
+    var person1 = Kunde("David", "Schulz", 2200.58,123467,"user123")
+    var person2 = Kunde("Siggi", "Würdich", 2070.68,1234565,"user123")
+    var kundenliste: MutableList<Person> = mutableListOf(
+            person1,
+            person2
+    )
     println("Willkommen in unserem geschäft! wir habe Textilien und schmuck anzubieten!")
     person1.anmeldung()
     println("Welche der artikel möchten sie wählen?:")
@@ -26,9 +27,14 @@ fun main() {
         var kleidungsstueck = store.kleidungsliste[i]
         println("${i}: Art: ${kleidungsstueck.produktArt}, Größe: ${kleidungsstueck.groesse}, Preis: ${kleidungsstueck.preis}, Farbe; ${kleidungsstueck.farbe}, Anzahl: ${kleidungsstueck.anzahl}")
     }
-    //var wahre = Store().wahreAuswahl(store.wahreAuswahl())
+    println("----------------------------------------")
+    println("Wählen sie ein Produkt")
 
-    store.wahreAuswahl()
+    // Produktauswahl
+    var auswahl = person1.wahreAuswahl(store.kleidungsliste)
+
+    //Wahre in den Wahrenkortb hinzufügen.
+    person1.warenkorb.add(auswahl)
 
 
 }
