@@ -31,7 +31,7 @@ open class Person(
                 logged = true
             } else {
                 println("Falsches Passwort. Versuch sie es noch einmal")
-                versuche++ // versuche = versuche + 1
+                versuche++ // + 1 versuch
             }
         }
         return logged
