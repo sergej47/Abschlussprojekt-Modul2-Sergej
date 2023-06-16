@@ -1,12 +1,14 @@
 package classes
 
+import kundenliste
+
 open class Person(
-    val name: String,
-    val nachname: String,
-    var kontoStand: Double,
-    var iD: Int,
-    var passwort: String,
-    var logged: Boolean = false
+        val name: String,
+        val nachname: String,
+        var kontoStand: Double,
+        var iD: Int,
+        var passwort: String,
+        var logged: Boolean = false
 
 ) {
 
@@ -14,30 +16,36 @@ open class Person(
         var wahrenkorb: List<Produkt> = listOf()
     }
 
-   open fun anmeldung(): Boolean {
-
-        println("Bitte hier einmal Anmelden:")
-        println("Name?:")
-        var eingabeName = readln()
-        println("Hallo $eingabeName")
+    open fun anmeldung(): Boolean {
 
 
-        // Passwortabfrage.
-        var versuche = 0
+        while (!logged) {
+            println("Bitte hier einmal Anmelden:")
+            println("ihr Name Bitte?:")
+            var eingabeName = readln()
+            println("Hallo $eingabeName")
 
-        while (versuche < 5 && !logged) {
+
+            // Passwortabfrage.
+            var versuche = 0
             println("geben sie ihr Passwort ein:")
             var pw: String? = readln()
-            if (pw != null) {
+            //Fragt ab, ob eingegebener passwort und der name übereinstimmt
+            var resoult = kundenliste.find { it.name == eingabeName && it.passwort == pw }
+            if (resoult != null) {
                 logged = true
-            } else {
-                println("Falsches Passwort. Versuch sie es noch einmal")
-                versuche++ // + 1 versuch
+                println("Willkommen in unserem Store!")
+            } else if (versuche == 3) {
+                println("Sie haben versucht einzuloggen, Bitte versuchen sich es später noch einmal.")
+                versuche = 0
+            }else{
+                println("Ihre daten stimmen nicht überein, bitte versuche es später nochmal.")
+                versuche = 0
             }
+            versuche++ // + 1 versuch
         }
         return logged
     }
-
 
 
 }

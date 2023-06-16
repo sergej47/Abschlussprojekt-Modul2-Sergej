@@ -16,13 +16,6 @@ open class Store {
         kleidungsstueck3,
         kleidungsstueck4
     )
-   fun kleidungsListe(
-        produktart: String,
-        groesse: String,
-        preis: Double,
-        farbe: String
-    ){
 
-
-   }   }
+}
 

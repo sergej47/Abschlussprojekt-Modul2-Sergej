@@ -9,7 +9,7 @@ open class Unterkategorien() {
     )
     var muetzen: MutableMap<String,Double> = mutableMapOf(
         "cap" to 7.99,
-        "Lang Mütze" to 6.99,
+        "Schwarze Mütze" to 6.99,
         "Blaue Mütze" to 8.99
     )
 

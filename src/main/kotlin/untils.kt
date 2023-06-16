@@ -1,9 +1,9 @@
-import classes.Kunde
-import classes.Person
 
 
-fun neuerKunde(){
 
+fun pairToString(pair: MutableMap.MutableEntry<String, Double>): String {
+
+    return "${pair.key}, ${pair.value}"
 
 }
 

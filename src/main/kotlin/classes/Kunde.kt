@@ -37,14 +37,10 @@ open class Kunde(
 
     }
 
-    fun shoppen() {
-
-    }
-
     open fun wahreAuswahl(list: MutableList<Kleidungsstueck>): Kleidungsstueck {
 
-        var index = 1
-        for (wahre in list) {
+        var index = 0
+        for (wahre in list ) {
             println("$index, $wahre")
             index++
         }
@@ -52,12 +48,16 @@ open class Kunde(
         var eingegebeneWahre = list[imput-1]
 
 
-        println("Sie haben sich fü die $eingegebeneWahre entschieden gute wahl!")
+        println("Sie haben sich für die $eingegebeneWahre entschieden,gute Wahl!")
         warenkorb.add(eingegebeneWahre)
         list.removeAt(imput)
         return eingegebeneWahre
 
 
     }
+    //fun bezahlen(konto: Double,preis: Double): Unterkategorien{
+           // println("")
+        //return
+    }
 
-}
+
