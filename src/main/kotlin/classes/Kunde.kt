@@ -20,7 +20,7 @@ open class Kunde(
 
     }
 
-   open fun kaufen(produkt: Produkt) {
+    open fun kaufen(produkt: Produkt) {
 
         if (anmeldung()) {
             produktList?.forEach {
@@ -32,27 +32,40 @@ open class Kunde(
         }
     }
 
-    override fun einkaufsliste(produkt: Produkt) {
+    override fun einkaufsliste(produkt: Produkt) {          // Hier wird die Methode "einkaufsliste" Überschrieben
         super.einkaufsliste(produkt)
 
     }
 
-    open fun wahreAuswahl(list: MutableList<Kleidungsstueck>): Int {
+    open fun wareAuswahl(list: MutableList<Kleidungsstueck>): Int {
 
-        var imput = readln().toInt()
-        var eingegebeneWahre = list[imput-1]
+        var imput = readln().toInt()                //-> Eingabe mit integer(zahl) welche ware man haben will.
+        var eingegebeneWahre = list[imput - 1]
 
 
         println("Sie haben sich für die $eingegebeneWahre entschieden,gute Wahl!")
-        warenkorb.add(eingegebeneWahre)
+        warenkorb.add(eingegebeneWahre)            // Die ware zu warenkorb hinzufügen!
 
-        return imput
+        return imput                              // Hier wird der eingegebene "imput" Wiedergegeben
 
 
     }
-    //fun bezahlen(konto: Double,preis: Double): Unterkategorien{
-           // println("")
-        //return
+
+    open fun bezahlen() {
+        var gesammtPreis = 0.0
+        for (element in warenkorb) {
+            gesammtPreis += element.preis
+        }
+        if (kontoStand < gesammtPreis) {
+            println("Dein kontostand reicht für den einkauf nicht aus!")
+
+        } else {
+            var newKonto = kontoStand - gesammtPreis
+            kontoStand = newKonto
+        }
+
+        println("Dein konto beträgt jetzt $kontoStand")
     }
+}
 
 

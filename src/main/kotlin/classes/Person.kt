@@ -20,6 +20,8 @@ open class Person(
 
 
         while (!logged) {
+
+            //Abfrage der Personalien.
             println("Bitte hier einmal Anmelden:")
             println("ihr Name Bitte?:")
             var eingabeName = readln()
@@ -38,7 +40,7 @@ open class Person(
             } else if (versuche == 3) {
                 println("Sie haben versucht einzuloggen, Bitte versuchen sich es später noch einmal.")
                 versuche = 0
-            }else{
+            } else {
                 println("Ihre daten stimmen nicht überein, bitte versuche es später nochmal.")
                 versuche = 0
             }
