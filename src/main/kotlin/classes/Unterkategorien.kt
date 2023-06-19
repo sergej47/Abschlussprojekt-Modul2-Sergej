@@ -2,6 +2,9 @@ package classes
 
 open class Unterkategorien() {
 
+    // Umschreiben in eine Liste mit Parametern! Erleichtert dir das Arbeiten!
+    // Eine neue Klasse mit dem namen "Schmuck" erstellen und von Produkt erben lassen.
+
     var schmuck: MutableMap<String,Double> = mutableMapOf(
         "Uhr" to 19.99,
         "Armband" to 4.99,

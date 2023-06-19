@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5eb2218c-3fa6-4611-bb4e-f75baa249c84" name="Changes" comment="Abschlussprojekt Shop:&#10;Testprojekt.">
+    <list default="true" id="5eb2218c-3fa6-4611-bb4e-f75baa249c84" name="Changes" comment="Abschlussprojekt Shop:&#10;Testprojekt.&#10;-&gt; + preis - Kontostand eingebaut&#10;-&gt; + Bezahlfunktion eingebaut">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes/Kunde.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes/Kunde.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes/Person.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes/Person.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes/Store.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes/Store.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes/Unterkategorien.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes/Unterkategorien.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/test.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687165430538</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Abschlussprojekt Shop:&#10;Testprojekt.&#10;-&gt; + preis - Kontostand eingebaut&#10;-&gt; + Bezahlfunktion eingebaut">
+      <created>1687176113164</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687176113164</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -144,6 +150,7 @@
     <MESSAGE value="Abschlussprojekt Shop:&#10;testweise:&#10;-&gt; habe Klasse Store angelegt&#10;-&gt; anmeldung bearbeiten&#10;-&gt; Begrüßung für user&#10;-&gt; Vorstellung der wahre&#10;-&gt; Auswahl der wahre" />
     <MESSAGE value="Abschlussprojekt Shop:&#10;testweise:&#10;-&gt; habe Klasse Store angelegt&#10;-&gt; anmeldung bearbeiten&#10;-&gt; Begrüßung für user&#10;-&gt; Vorstellung der wahre&#10;-&gt; Auswahl der wahre&#10;-&gt; Vorstellung Unterkategorie" />
     <MESSAGE value="Abschlussprojekt Shop:&#10;Testprojekt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Abschlussprojekt Shop:&#10;Testprojekt." />
+    <MESSAGE value="Abschlussprojekt Shop:&#10;Testprojekt.&#10;-&gt; + preis - Kontostand eingebaut&#10;-&gt; + Bezahlfunktion eingebaut" />
+    <option name="LAST_COMMIT_MESSAGE" value="Abschlussprojekt Shop:&#10;Testprojekt.&#10;-&gt; + preis - Kontostand eingebaut&#10;-&gt; + Bezahlfunktion eingebaut" />
   </component>
 </project>

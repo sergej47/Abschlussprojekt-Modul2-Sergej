@@ -32,36 +32,36 @@ open class Kunde(
         }
     }
 
-    override fun einkaufsliste(produkt: Produkt) {          // Hier wird die Methode "einkaufsliste" Überschrieben
+    override fun einkaufsliste(produkt: Produkt) {               // Hier wird die Methode "einkaufsliste" Überschrieben
         super.einkaufsliste(produkt)
 
     }
 
     open fun wareAuswahl(list: MutableList<Kleidungsstueck>): Int {
 
-        var imput = readln().toInt()                //-> Eingabe mit integer(zahl) welche ware man haben will.
+        var imput = readln().toInt()                            //-> Eingabe mit integer(zahl) welche ware man haben will.
         var eingegebeneWahre = list[imput - 1]
 
 
         println("Sie haben sich für die $eingegebeneWahre entschieden,gute Wahl!")
-        warenkorb.add(eingegebeneWahre)            // Die ware zu warenkorb hinzufügen!
+        warenkorb.add(eingegebeneWahre)                                             // Die ware zu warenkorb hinzufügen!
 
-        return imput                              // Hier wird der eingegebene "imput" Wiedergegeben
+        return imput                                                    // Hier wird der eingegebene "imput" Wiedergegeben
 
 
     }
 
     open fun bezahlen() {
         var gesammtPreis = 0.0
-        for (element in warenkorb) {
-            gesammtPreis += element.preis
+        for (element in warenkorb) {                                  //Das element im warenkorb
+            gesammtPreis += element.preis                            // Der gesammtPreis vom warenkorb + dar element preis
         }
-        if (kontoStand < gesammtPreis) {
+        if (kontoStand < gesammtPreis) {                           // wenn der kontostand kleiner als der gesammt preis, dann geht die schleife auf else!
             println("Dein kontostand reicht für den einkauf nicht aus!")
 
         } else {
-            var newKonto = kontoStand - gesammtPreis
-            kontoStand = newKonto
+            var newKonto = kontoStand - gesammtPreis              // Neues kontostand mit abrechnung des preises.
+            kontoStand = newKonto                                // Neuen wert dem konto zuweisen!
         }
 
         println("Dein konto beträgt jetzt $kontoStand")
