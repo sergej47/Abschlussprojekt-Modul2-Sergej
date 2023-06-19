@@ -45,7 +45,7 @@ open class Kunde(
 
         println("Sie haben sich für die $eingegebeneWahre entschieden,gute Wahl!")
         warenkorb.add(eingegebeneWahre)                                             // Die ware zu warenkorb hinzufügen!
-
+        eingegebeneWahre.removeOne()
         return imput                                                    // Hier wird der eingegebene "imput" Wiedergegeben
 
 
