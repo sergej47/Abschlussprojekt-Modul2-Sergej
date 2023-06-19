@@ -56,7 +56,7 @@ fun main() {
 
     println("-----------------------------------------")
     println("Wollen sie noch ein weiteres produkt wählen?")
-    //Anzeigen von Unterkategorien
+    //Anzeigen von Unterkategorien // habe es umgebaut muss es morgen zu Ende Coden.
     var unterketegorien = Unterkategorien()
 
     println("Mützen:")
