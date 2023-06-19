@@ -7,4 +7,7 @@ open class Produkt (
     var farbe: String,
     var anzahl: Int
 ) {
+    fun removeOne(){
+        this.anzahl--
+    }
 }

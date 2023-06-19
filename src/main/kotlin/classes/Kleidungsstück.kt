@@ -13,6 +13,7 @@ class Kleidungsstueck (
     override fun toString(): String {
         return "Größe: $groesse, Preis: $preis, Art: $produktArt, Farbe: $farbe, Anzahl: $anzahl"
     }
+
 }
 
 

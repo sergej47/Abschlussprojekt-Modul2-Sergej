@@ -37,21 +37,16 @@ open class Kunde(
 
     }
 
-    open fun wahreAuswahl(list: MutableList<Kleidungsstueck>): Kleidungsstueck {
+    open fun wahreAuswahl(list: MutableList<Kleidungsstueck>): Int {
 
-        var index = 0
-        for (wahre in list ) {
-            println("$index, $wahre")
-            index++
-        }
         var imput = readln().toInt()
         var eingegebeneWahre = list[imput-1]
 
 
         println("Sie haben sich für die $eingegebeneWahre entschieden,gute Wahl!")
         warenkorb.add(eingegebeneWahre)
-        list.removeAt(imput)
-        return eingegebeneWahre
+
+        return imput
 
 
     }
