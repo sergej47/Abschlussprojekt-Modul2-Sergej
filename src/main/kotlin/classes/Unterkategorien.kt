@@ -1,26 +1,9 @@
 package classes
 
-open class Unterkategorien(produktArt: String, groesse: String, preis: Double, farbe: String, anzahl: Int) : Produkt(produktArt, groesse, preis, farbe, anzahl) {
+open class Unterkategorien (produktArt: String,groesse: String,preis: Double,farbe: String,anzahl: Int ): Produkt(produktArt,groesse,preis,farbe,anzahl){
 
 
-    // Die 1te Unterkategorie.
-    var uhr = Unterkategorien("Uhr", "M", 19.99, "Schwarz", 5)
-    var armband = Unterkategorien("Armband", "S", 4.99, "Grün", 4)
-    var kette = Unterkategorien("kette", "L", 24.95, "Gold", 7)
 
-    //Die 2te Unterkategorie.
-    var cap = Unterkategorien("Cap", "XL", 7.99, "Rot", 10)
-    var mütze1 = Unterkategorien("Mütze", "XL", 7.99, "Gelb", 8)
-    var mütze2 = Unterkategorien("Mütze", "XL", 7.99, "Blau", 6)
-
-    var unterkategorienListe: MutableList<Unterkategorien> = mutableListOf(
-            uhr,
-            armband,
-            kette,
-            cap,
-            mütze1,
-            mütze2
-    )
 }
 // Umschreiben in eine Liste mit Parametern! Erleichtert dir das Arbeiten!
 // Eine neue Klasse mit dem namen "Schmuck" erstellen und von Produkt erben lassen.
@@ -37,3 +20,21 @@ open class Unterkategorien(produktArt: String, groesse: String, preis: Double, f
 //)
 
 
+/*println("Mützen:")
+var index = 0
+for (key in unterketegorien.muetzen.keys.toList()) {
+    println("$index: $key, ${unterketegorien.muetzen[key]}")
+    index++
+}
+println("Schmuck:")
+for (pair in unterketegorien.schmuck) {
+    println(pairToString(pair))
+}
+var eingabe = readln().toInt()
+var auswahlKey = unterketegorien.muetzen.keys.toList()[eingabe]              //Speichert den namen "key" der ausgewählt worden ist.
+var preis = unterketegorien.muetzen[auswahlKey]                              //speichert den preis "Value" der auswahl ab.
+println("ihre auswahl war $auswahlKey $preis")
+//Warenkorb.
+person1.warenkorb.add()
+
+ */

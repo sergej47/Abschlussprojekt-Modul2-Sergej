@@ -7,6 +7,7 @@ open class Produkt (
     var farbe: String,
     var anzahl: Int
 ) {
+    //Produkt Remove Methode/Funktion
     fun removeOne(){
         this.anzahl--
     }
