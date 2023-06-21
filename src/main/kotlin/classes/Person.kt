@@ -12,10 +12,4 @@ open class Person(
 
 ) {
 
-    open fun einkaufsliste(produkt: Produkt) {
-        var wahrenkorb: List<Produkt> = listOf()
-    }
-
-
-
 }

@@ -1,16 +1,12 @@
 package classes
 
-class Kleidungsstueck (
-    produktart: String, groesse: String,
-    preis: Double, farbe: String, anzahl: Int
-): Produkt(produktart,groesse, preis, farbe, anzahl) {
+//constructor um Kleidungsstücke zu Erstellen.
+class Kleidungsstueck(
+        produktart: String, groesse: String,
+        preis: Double, farbe: String, anzahl: Int
+) : Produkt(produktart, groesse, preis, farbe, anzahl) {
 
-
-    fun rezensionAnzeigen(){
-
-    }
-
-    override fun toString(): String {
+    override fun toString(): String {                                                                                   //bearbeitet die inhalte und macht sie in der konsole zum String.
         return "Größe: $groesse, Preis: $preis, Art: $produktArt, Farbe: $farbe, Anzahl: $anzahl"
     }
 
