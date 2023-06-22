@@ -8,7 +8,7 @@ open class Kunde(
         iD: Int,
         passwort: String,
 
-        ) : Person(name, nachname, konto, iD, passwort) {
+        ) : Person(name, nachname, konto, iD, passwort,) {
     var warenkorb: MutableList<Produkt> = mutableListOf()
 
 

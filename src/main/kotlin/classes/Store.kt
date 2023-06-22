@@ -136,50 +136,30 @@ open class Store {
 
     fun wareAuswahlProdukt(kunde: Kunde): Int {
         println("Geben sie eine Zahl zwischen 0-5 ein um ware zu wählen, oder die (9) um einfach weiteren schritt zu gehen.")
-        var imput = readln().toInt()                                                                                    //-> Eingabe mit integer(zahl) welche ware man haben will.
-        var eingegebeneWahre = produktListe[imput]
-        println("Sie haben sich für: ${eingegebeneWahre.produktArt} ${eingegebeneWahre.preis} entschieden,gute Wahl!")
-        kunde.warenkorb.add(eingegebeneWahre)                                                                           // Die ware zu warenkorb hinzufügen!
-        eingegebeneWahre.removeOne()                                                                                    // Die ware aus dem Warenkorb löschen.
-        println("Bitte warte...")
-        Thread.sleep(3000)
-        return imput                                                                                                    // Hier wird der eingegebene "imput" Wiedergegeben
-
-
-    }
-
-    open fun ausloggen() {
-        println("Wollen sie sich ausloggen?")
-        println("(ja): zum ausloggen (nein): zum weitereinkauf.")
-        var imput = readln()
-        if (imput.equals("ja", ignoreCase = true)) {                                                              //equals: Überprüft den inhalt, ob er gleich ist. (Boolean) //wenn das "ignoreCase" auf (true) gestellt ist
-            println("Bitte ein moment warten...")
+            var imput = readln().toInt()                                                                                    //-> Eingabe mit integer(zahl) welche ware man haben will.
+            var eingegebeneWahre = produktListe[imput]
+            println("Sie haben sich für: ${eingegebeneWahre.produktArt} ${eingegebeneWahre.preis} entschieden,gute Wahl!")
+            kunde.warenkorb.add(eingegebeneWahre)                                                                           // Die ware zu warenkorb hinzufügen!
+            eingegebeneWahre.removeOne()                                                                                    // Die ware aus dem Warenkorb löschen.
+            println("Bitte warte...")
             Thread.sleep(3000)
-            println("Sie haben sich erfolgreich ausgeloggt.")                                                           //..dann ist es egal, ob man groß oder kleinSchreibt ist der inhalt trotzdem der gleiche, ist der wert auf (false), vergleicht er klein & Groß
-            System.exit(0)                                                                                        //Beendet das program
+            return imput                                                                                                    // Hier wird der eingegebene "imput" Wiedergegeben
 
-        } else {
-            println("weiter gehts! :)")
+
+        }
+
+        fun ausloggen() {
+            println("Wollen sie sich ausloggen?")
+            println("(ja): zum ausloggen (nein): zum weitereinkauf.")
+            var imput = readln()
+            if (imput.equals("ja", ignoreCase = true)) {                                                              //equals: Überprüft den inhalt, ob er gleich ist. (Boolean) //wenn das "ignoreCase" auf (true) gestellt ist
+                println("Bitte ein moment warten...")
+                Thread.sleep(3000)
+                println("Sie haben sich erfolgreich ausgeloggt.")                                                           //..dann ist es egal, ob man groß oder kleinSchreibt ist der inhalt trotzdem der gleiche, ist der wert auf (false), vergleicht er klein & Groß
+                System.exit(0)                                                                                        //Beendet das program
+
+            } else {
+                println("weiter gehts! :)")
+            }
         }
     }
-}
-
-
-    /*fun menue(){
-        println("Herzlich Willkommen in unserem Store!")
-        println("1-> anmeldung" +
-                "2-> Registrieren" +
-                "3-> ausloggen" +
-                "4-> wareAuswahlProdukt" +
-                "4-> wareAuswahlKleidung")
-        var imput = readln()
-        when(imput){
-            "1" -> anmeldung()
-            "2" -> registrieren()
-            "3" -> ausloggen()
-            "4" -> wareAuswahlProdukt(kunde = person1)
-            "5" -> wareAuswahlKleidung()
-        }
-    }
-
-*/
