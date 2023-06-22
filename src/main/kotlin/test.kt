@@ -4,44 +4,36 @@ import classes.*
 fun main() {
     var store = Store()
     fun menue() {
-        println("Herzlich Willkommen in unserem Store!")
-        println("1 -> anmeldung")
-        println("2 -> Registrieren")
-        println("3 -> ausloggen")
-        println("4 -> wareAuswahlProdukt")
-        println("5 -> wareAuswahlKleidung")
-        var imput = readln()
-        println("Sie haben: $imput gewählt")
-        when (imput) {
-            "1" -> store.anmeldung()
-            "2" -> store.registrieren()
-            "3" -> store.ausloggen()
-            "4" -> store.wareAuswahlProdukt(store.person1)
-            "5" -> store.wareAuswahlKleidung(store.person1)
-        }
-        //Erben von Store class
-        //Store Einführung.
+        var kunde: Kunde = Kunde("David", "Schulz", 2200.58, 123467, "user123")
         println("Willkommen in unseren Geschäft! wir habe Textilien und schmuck anzubieten!")
+        do {
+            println("Herzlich Willkommen in unserem Store!")
+            println("1 -> anmeldung")
+            println("2 -> Registrieren")
+            println("3 -> ausloggen")
+            println("4 -> wareAuswahlProdukt")
+            println("5 -> wareAuswahlKleidung")
+            var imput = readln()
+            println("Sie haben: $imput gewählt")
+            when (imput) {
+                //Habe für das menü leider nicht genügend Zeit gehabt, um es zu vollenden
+                "1" -> {
+                    kunde = store.anmeldung()
+                }
+                "2" -> {
+                    store.registrieren()
+                    break
+                }
+                "3" -> println("Das Menü ist noch in arbeit")
+                "4" -> println("Das Menü ist noch in arbeit")
+                "5" -> println("Das Menü ist noch in arbeit")
+            }
+        }while (true)
 
-        // Anmeldungsvogang
+        //Store Einführung.
+                                                                                                           //Erben von Kunden class
         //Kundenanmeldung und abspeichern.
-        var kunde: Kunde                                                                                                    //Erben von Kunden class
-
         while (true) {
-            try {                                                                                                           // try catch: fängt die eingabe fehler ab und lässt das system weiterarbeiten, statt abzustürzen.
-
-                kunde = store.anmeldung()
-
-                break
-            } catch (ex: Exception) {
-                println("Ihre eingabe war falsch! Bitte veruche es nochmal")
-            }
-        }
-        while (true) {
-            try {
-            } catch (ex: Exception) {
-                println("Die eingabe war falsch. Bitte versuche es nochmal")
-            }
             println("Welche der artikel möchten sie wählen?:")
             println("Wir haben zu auswahl:")
             println("----------------------------------------")
@@ -135,7 +127,6 @@ fun main() {
             for (artikel in kunde.warenkorb) {
                 println("|Your shopping cart:: ${artikel.produktArt}")                                                      // Die Einkaufsliste vom Kunden
             }
-            //Kassenbon ausdrucken.
             println("""
         |You have paid:       ${kunde.bezahlen()}
         |*************
@@ -150,5 +141,4 @@ fun main() {
     }
     menue()
 }
-
 //-> Mitarbeiter Preise/ware änder können.//habe ich leider zeitlich nicht geschafft! :(

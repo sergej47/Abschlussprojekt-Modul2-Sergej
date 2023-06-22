@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5eb2218c-3fa6-4611-bb4e-f75baa249c84" name="Changes" comment="Abschlussprojekt TextilienShop:&#10;Testprojekt:&#10;-&gt; + Anmeldung&#10;-&gt; + Registrierung&#10;-&gt; + ProduktListe eingebaut // Unterkategorien&#10;-&gt; + Bezahlfunktion eingebaut&#10;-&gt; + Unterkategorien mit index ausgeben lassen&#10;-&gt; + auswahl von unterkategorien mit eingabe &#10;-&gt; + do-while-schleifen hinzugefügt&#10;-&gt; + try catch&#10;-&gt; + Logout&#10;morgen:&#10;-&gt; + Mitarbeiter class Funktional machen&#10;-&gt; + Auswahl Menü">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes/Kunde.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes/Kunde.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes/Store.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes/Store.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/untils.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687353543075</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Abschlussprojekt TextilienShop:&#10;Testprojekt:&#10;-&gt; + Anmeldung&#10;-&gt; + Registrierung&#10;-&gt; + ProduktListe eingebaut // Unterkategorien&#10;-&gt; + Bezahlfunktion eingebaut&#10;-&gt; + Unterkategorien mit index ausgeben lassen&#10;-&gt; + auswahl von unterkategorien mit eingabe &#10;-&gt; + do-while-schleifen hinzugefügt&#10;-&gt; + try catch&#10;-&gt; + Logout&#10;morgen:&#10;-&gt; + Mitarbeiter class Funktional machen&#10;-&gt; + Auswahl Menü">
+      <created>1687423528780</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1687423528780</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -189,6 +197,7 @@
     <MESSAGE value="Abschlussprojekt TextilienShop:&#10;Testprojekt:&#10;-&gt; + preis - Kontostand funktion eingebaut&#10;-&gt; + Bezahlfunktion eingebaut&#10;-&gt; + Unterkategorien mit index ausgeben lassen&#10;-&gt; + auswahl von unterkategorien mit eingabe &#10;morgen:&#10;-&gt; + Unterkategorien.kt neu anlegen mit einer &quot;MutableListe&quot; statt &quot;MutableMap&quot;&#10;-&gt; + und weiteres" />
     <MESSAGE value="Abschlussprojekt TextilienShop:&#10;Testprojekt:&#10;-&gt; + ProduktListe eingebaut // Unterkategorien&#10;-&gt; + Bezahlfunktion eingebaut&#10;-&gt; + Unterkategorien mit index ausgeben lassen&#10;-&gt; + auswahl von unterkategorien mit eingabe &#10;-&gt; + Registrierung&#10;-&gt; + do-while-schleifen hinzugefügt&#10;morgen:&#10;-&gt; + Logout einbauen&#10;-&gt; + Mitarbeiter class Funktional machen&#10;-&gt; + und try catsh einbauen, um fehler aufzufangen." />
     <MESSAGE value="Abschlussprojekt TextilienShop:&#10;Testprojekt:&#10;-&gt; + ProduktListe eingebaut // Unterkategorien&#10;-&gt; + Bezahlfunktion eingebaut&#10;-&gt; + Unterkategorien mit index ausgeben lassen&#10;-&gt; + auswahl von unterkategorien mit eingabe &#10;-&gt; + Registrierung&#10;-&gt; + do-while-schleifen hinzugefügt&#10;-&gt; + try catch&#10;-&gt; + Logout&#10;morgen:&#10;-&gt; + Mitarbeiter class Funktional machen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Abschlussprojekt TextilienShop:&#10;Testprojekt:&#10;-&gt; + ProduktListe eingebaut // Unterkategorien&#10;-&gt; + Bezahlfunktion eingebaut&#10;-&gt; + Unterkategorien mit index ausgeben lassen&#10;-&gt; + auswahl von unterkategorien mit eingabe &#10;-&gt; + Registrierung&#10;-&gt; + do-while-schleifen hinzugefügt&#10;-&gt; + try catch&#10;-&gt; + Logout&#10;morgen:&#10;-&gt; + Mitarbeiter class Funktional machen" />
+    <MESSAGE value="Abschlussprojekt TextilienShop:&#10;Testprojekt:&#10;-&gt; + Anmeldung&#10;-&gt; + Registrierung&#10;-&gt; + ProduktListe eingebaut // Unterkategorien&#10;-&gt; + Bezahlfunktion eingebaut&#10;-&gt; + Unterkategorien mit index ausgeben lassen&#10;-&gt; + auswahl von unterkategorien mit eingabe &#10;-&gt; + do-while-schleifen hinzugefügt&#10;-&gt; + try catch&#10;-&gt; + Logout&#10;morgen:&#10;-&gt; + Mitarbeiter class Funktional machen&#10;-&gt; + Auswahl Menü" />
+    <option name="LAST_COMMIT_MESSAGE" value="Abschlussprojekt TextilienShop:&#10;Testprojekt:&#10;-&gt; + Anmeldung&#10;-&gt; + Registrierung&#10;-&gt; + ProduktListe eingebaut // Unterkategorien&#10;-&gt; + Bezahlfunktion eingebaut&#10;-&gt; + Unterkategorien mit index ausgeben lassen&#10;-&gt; + auswahl von unterkategorien mit eingabe &#10;-&gt; + do-while-schleifen hinzugefügt&#10;-&gt; + try catch&#10;-&gt; + Logout&#10;morgen:&#10;-&gt; + Mitarbeiter class Funktional machen&#10;-&gt; + Auswahl Menü" />
   </component>
 </project>
