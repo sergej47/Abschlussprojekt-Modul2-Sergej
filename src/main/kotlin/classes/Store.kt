@@ -15,7 +15,8 @@ open class Store {
     var kleidungsstueck5 = Kleidungsstueck("Pullover", "L", 16.95, "Neon Grün", 3)
 
     var kleidungsstueck6 = Kleidungsstueck("Socken", "40-43", 2.95, "Schwarz", 3)
-        // Eine MutableList für alle Kleidungsstücke.
+
+    // Eine MutableList für alle Kleidungsstücke.
     var kleidungsliste: MutableList<Kleidungsstueck> = mutableListOf(
             kleidungsstueck1,
             kleidungsstueck2,
@@ -77,6 +78,7 @@ open class Store {
         var neuePerson = Kunde(neuerName, neuerNachname, neuesKonto.toDouble(), Random.nextInt(10000), neuePasswort)
         kundenliste.add(neuePerson)
         return neuePerson
+
     }
 
     //Anmeldevorgang für Kunden.
@@ -114,7 +116,7 @@ open class Store {
             }
             println("Ihre daten stimmen nicht überein, bitte versuche es später nochmal.")
 
-            versuche++                                                                                                  // + 1 versuch
+            versuche++ // + 1 versuch
         }
     }
 
@@ -144,7 +146,7 @@ open class Store {
             var zubehör = produktListe[i]
             println("${i}: Art: ${zubehör.produktArt}, Größe: ${zubehör.groesse}, Preis: ${zubehör.preis}, Farbe; ${zubehör.farbe}, Anzahl: ${zubehör.anzahl}")
         }
-        var input = readln().toInt()                                                                                    //-> Eingabe mit integer(zahl) welche ware man haben will.
+        var input = readln().toInt()                                                                                    //-> Eingabe mit integer (zahl) welche ware man haben will.
         var eingegebeneWahre = produktListe[input]
         println("Sie haben sich für: ${eingegebeneWahre.produktArt} ${eingegebeneWahre.preis} entschieden,gute Wahl!")
         kunde.warenkorb.add(eingegebeneWahre)                                                                           // Die ware zu warenkorb hinzufügen!
@@ -160,9 +162,9 @@ open class Store {
         println("(ja): zum ausloggen (nein): zum weitereinkauf.")
         var imput = readln()
         if (imput.equals("ja", ignoreCase = true)) {                                                              //equals: Überprüft den inhalt, ob er gleich ist. (Boolean) //wenn das "ignoreCase" auf (true) gestellt ist
-            println("Bitte ein moment warten...")
+            println("Bitte ein moment warten...")                                                                       //..dann ist es egal, ob man groß oder kleinSchreibt ist der inhalt trotzdem der gleiche, ist der wert auf (false), vergleicht er klein & Groß
             Thread.sleep(3000)
-            println("Sie haben sich erfolgreich ausgeloggt.")                                                           //..dann ist es egal, ob man groß oder kleinSchreibt ist der inhalt trotzdem der gleiche, ist der wert auf (false), vergleicht er klein & Groß
+            println("Sie haben sich erfolgreich ausgeloggt.")
             System.exit(0)                                                                                        //Beendet das program
 
         } else {
