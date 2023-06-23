@@ -71,7 +71,7 @@ open class Store {
         var neuerName = readln()
         println("Bitte geben sie ihren Nachnamen ein")
         var neuerNachname = readln()
-        println("Bitte geben sie ihren Konto ein")
+        println("Bitte geben sie ihr Guthaben ein")
         var neuesKonto = readln()
         println("Bitte geben sie ihren Passwort ein")
         var neuePasswort = readln()                                                                                     //Random.nextInt gibt zufällig eine ID aus.

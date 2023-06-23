@@ -3,9 +3,6 @@ import classes.Store
 import classes.*
 
 fun main() {
-
-
-    fun main() {
         var store = Store()
         fun menue() {
             var kunde: Kunde = Kunde("David", "Schulz", 2200.58, 123467, "user123")
@@ -146,5 +143,5 @@ fun main() {
 
         }
         menue()
-    }
+
 }

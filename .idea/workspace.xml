@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5eb2218c-3fa6-4611-bb4e-f75baa249c84" name="Changes" comment="Abschlussprojekt TextilienShop:&#10;Testprojekt:&#10;-&gt; + Auswahl Menü  //(Das Menü ist noch in Arbeit!)&#10;-&gt; + Anmeldung&#10;-&gt; + Registrierung&#10;-&gt; + ProduktListe eingebaut // Unterkategorien&#10;-&gt; + Bezahlfunktion eingebaut&#10;-&gt; + Unterkategorien mit index ausgeben lassen&#10;-&gt; + auswahl von unterkategorien mit eingabe &#10;-&gt; + do-while-schleifen hinzugefügt&#10;-&gt; + try catch&#10;-&gt; + Logout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes/Store.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes/Store.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,15 +34,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "preferences.sourceCode"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Kotlin.TestKt">
+}</component>
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="Abschlussprojekt-Modul2-Sergej" />
@@ -58,8 +59,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.TestKt" />
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Kotlin.TestKt" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687442923833</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Abschlussprojekt TextilienShop:&#10;Testprojekt:&#10;-&gt; + Auswahl Menü  //(Das Menü ist noch in Arbeit!)&#10;-&gt; + Anmeldung&#10;-&gt; + Registrierung&#10;-&gt; + ProduktListe eingebaut // Unterkategorien&#10;-&gt; + Bezahlfunktion eingebaut&#10;-&gt; + Unterkategorien mit index ausgeben lassen&#10;-&gt; + auswahl von unterkategorien mit eingabe &#10;-&gt; + do-while-schleifen hinzugefügt&#10;-&gt; + try catch&#10;-&gt; + Logout">
+      <created>1687456179262</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1687456179262</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
